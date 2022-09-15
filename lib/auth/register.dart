@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_course/home_page.dart';
-import 'package:flutter_course/login.dart';
+import 'package:flutter_course/auth/login.dart';
 class Register extends StatefulWidget {
   const Register({Key? key}) : super(key: key);
 
@@ -65,13 +65,12 @@ class _RegisterState extends State<Register> {
                 ),
               ),
               SizedBox(height: 40.0,),
-
               Material(
                 elevation: 5,
                 color: Colors.red,
                 borderRadius: BorderRadius.circular(10),
                 child: MaterialButton(
-                    child: Text("Login",
+                    child: Text("Register",
                       style: TextStyle(color: Colors.white,fontSize: 20,fontWeight: FontWeight.bold),),
                     onPressed: (){
                       Navigator.push(context, MaterialPageRoute(builder: (context) => HomePage()));

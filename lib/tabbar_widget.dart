@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_course/login.dart';
-import 'package:flutter_course/register.dart';
+import 'package:flutter_course/auth/login.dart';
+import 'package:flutter_course/auth/register.dart';
 
 class TabbarWidget extends StatelessWidget {
   const TabbarWidget({Key? key}) : super(key: key);

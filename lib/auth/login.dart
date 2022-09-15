@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_course/home_page.dart';
-import 'package:flutter_course/register.dart';
+import 'package:flutter_course/auth/register.dart';
 class Login extends StatefulWidget {
   const Login({Key? key}) : super(key: key);
 

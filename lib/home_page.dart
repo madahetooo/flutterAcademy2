@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_course/basic_widgets/grid_view_example.dart';
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
 
@@ -12,15 +13,151 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
+        centerTitle: true,
         title: Text("Home Page"),
       ),
-      body: const Center(
-        child: Text(
-          "THIS IS A TEXT",
-          style: TextStyle(
-            fontWeight: FontWeight.bold,
-            fontSize: 30,
-            color: Colors.red,
+      body:  Center(
+        child: SingleChildScrollView(
+          child: Padding(
+            padding: const EdgeInsets.all(20.0),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                GestureDetector(
+                  onTap: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => GridViewExample()));
+                  },
+                  child: Container(
+                    padding: const EdgeInsets.all(35),
+                    margin: const EdgeInsets.all(20),
+                    decoration: BoxDecoration(
+                        border: Border.all(color: Colors.black,width: 4),
+                        borderRadius: BorderRadius.circular(50),
+                        boxShadow: const [
+                          BoxShadow(
+                            color: Colors.green,
+                            offset: Offset(6.0, 6.0),
+                          )
+                        ]
+                    ),
+                    child: const Text(
+                      "Basic Widgets Apps",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20,
+                      ),
+                    ),
+                  ),
+                ),
+                GestureDetector(
+                  onTap: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => GridViewExample()));
+                  },
+                  child: Container(
+                    padding: const EdgeInsets.all(35),
+                    margin: const EdgeInsets.all(20),
+                    decoration: BoxDecoration(
+                        border: Border.all(color: Colors.black,width: 4),
+                        borderRadius: BorderRadius.circular(50),
+                        boxShadow: const [
+                          BoxShadow(
+                            color: Colors.green,
+                            offset: Offset(6.0, 6.0),
+                          )
+                        ]
+                    ),
+                    child: const Text(
+                      "BMI Calculator",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20,
+                      ),
+                    ),
+                  ),
+                ),
+                GestureDetector(
+                  onTap: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => GridViewExample()));
+
+                  },
+                  child: Container(
+                    padding: const EdgeInsets.all(35),
+                    margin: const EdgeInsets.all(20),
+                    decoration: BoxDecoration(
+                        border: Border.all(color: Colors.black,width: 4),
+                        borderRadius: BorderRadius.circular(50),
+                        boxShadow: const [
+                          BoxShadow(
+                            color: Colors.green,
+                            offset: Offset(6.0, 6.0),
+                          )
+                        ]
+                    ),
+                    child: const Text(
+                      "Todolist Application",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20,
+                      ),
+                    ),
+                  ),
+                ),
+                GestureDetector(
+                  onTap: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => GridViewExample()));
+
+                  },
+                  child: Container(
+                    padding: const EdgeInsets.all(35),
+                    margin: const EdgeInsets.all(20),
+                    decoration: BoxDecoration(
+                        border: Border.all(color: Colors.black,width: 4),
+                        borderRadius: BorderRadius.circular(50),
+                        boxShadow: const [
+                          BoxShadow(
+                            color: Colors.green,
+                            offset: Offset(6.0, 6.0),
+                          )
+                        ]
+                    ),
+                    child: const Text(
+                      "WorldTimer Application",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20,
+                      ),
+                    ),
+                  ),
+                ),
+                GestureDetector(
+                  onTap: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => GridViewExample()));
+                  },
+                  child: Container(
+                    padding: const EdgeInsets.all(35),
+                    margin: const EdgeInsets.all(20),
+                    decoration: BoxDecoration(
+                        border: Border.all(color: Colors.black,width: 4),
+                        borderRadius: BorderRadius.circular(50),
+                        boxShadow: const [
+                          BoxShadow(
+                            color: Colors.green,
+                            offset: Offset(6.0, 6.0),
+                          )
+                        ]
+                    ),
+                    child: const Text(
+                      "Firebase Chat Application",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20,
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
       ),

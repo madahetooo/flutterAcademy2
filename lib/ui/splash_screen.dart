@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_course/home_page.dart';
-import 'package:flutter_course/login.dart';
+import 'package:flutter_course/auth/login.dart';
 import 'package:flutter_course/main.dart';
 import 'package:flutter_course/tabbar_widget.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
