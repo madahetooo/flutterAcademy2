@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_course/basic_widgets/bottom_navigation_bar_example.dart';
 import 'package:flutter_course/basic_widgets/grid_view_example.dart';
+import 'package:flutter_course/basic_widgets/list_view_example.dart';
+import 'package:flutter_course/basic_widgets/toast_example.dart';
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
 
@@ -26,7 +29,7 @@ class _HomePageState extends State<HomePage> {
               children: [
                 GestureDetector(
                   onTap: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => GridViewExample()));
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => BottomNavigatioNBarExample()));
                   },
                   child: Container(
                     padding: const EdgeInsets.all(35),
