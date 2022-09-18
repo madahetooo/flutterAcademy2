@@ -9,6 +9,9 @@ class Register extends StatefulWidget {
 }
 
 class _RegisterState extends State<Register> {
+  bool _obscureText = true;
+  bool _obscureText2 = true;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -44,9 +47,16 @@ class _RegisterState extends State<Register> {
               ),
               const SizedBox(height: 20.0,),
               TextFormField(
-                keyboardType: TextInputType.emailAddress,
+                keyboardType: TextInputType.visiblePassword,
+                obscureText: _obscureText2,
                 decoration: InputDecoration(
                     prefixIcon: Icon(Icons.password),
+                    suffixIcon: IconButton(
+                      onPressed: (){
+                        _toggle2();
+                      },
+                      icon: Icon(_obscureText2 ? Icons.visibility_off : Icons.visibility),
+                    ),
                     label: Text("Password"),
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10),
@@ -55,9 +65,16 @@ class _RegisterState extends State<Register> {
               ),
               const  SizedBox(height: 20.0,),
               TextFormField(
-                keyboardType: TextInputType.emailAddress,
+                keyboardType: TextInputType.visiblePassword,
+                obscureText: _obscureText,
                 decoration: InputDecoration(
                     prefixIcon: Icon(Icons.password),
+                    suffixIcon: IconButton(
+                      onPressed: (){
+                        _toggle();
+                      },
+                      icon: Icon(_obscureText ? Icons.visibility_off : Icons.visibility),
+                    ),
                     label: Text("Confirm Password"),
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10),
@@ -103,5 +120,15 @@ class _RegisterState extends State<Register> {
         ),
       ),
     );
+  }
+  void _toggle(){
+    setState((){
+      _obscureText = !_obscureText;
+    });
+  }
+  void _toggle2(){
+    setState((){
+      _obscureText2 = !_obscureText2;
+    });
   }
 }
