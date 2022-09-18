@@ -31,9 +31,10 @@ class _LoginState extends State<Login> {
                   )
                 ),
               ),
-              SizedBox(height: 20.0,),
+              const SizedBox(height: 20.0,),
               TextFormField(
-                keyboardType: TextInputType.emailAddress,
+                keyboardType: TextInputType.visiblePassword,
+                obscureText: true,
                 decoration: InputDecoration(
                     prefixIcon: Icon(Icons.password),
                     label: Text("Password"),
@@ -42,13 +43,13 @@ class _LoginState extends State<Login> {
                     )
                 ),
               ),
-              SizedBox(height: 40.0,),
+              const SizedBox(height: 40.0,),
               Material(
                 elevation: 5,
                 color: Colors.red,
                 borderRadius: BorderRadius.circular(10),
                 child: MaterialButton(
-                  child: Text("Login",
+                  child: const Text("Login",
                   style: TextStyle(color: Colors.white,fontSize: 20,fontWeight: FontWeight.bold),),
                     onPressed: (){
                     Navigator.push(context, MaterialPageRoute(builder: (context) => HomePage()));
@@ -56,17 +57,17 @@ class _LoginState extends State<Login> {
                 ),
 
               ),
-              SizedBox(height: 20,),
+              const SizedBox(height: 20,),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text("Don't Have an account !?"),
+                  const Text("Don't Have an account !?"),
                   GestureDetector(
                     onTap: (){
                       Navigator.push(context, MaterialPageRoute(builder: (context) => Register()));
 
                     },
-                    child: Text("  Sign Up",
+                    child: const Text("  Sign Up",
                     style: TextStyle(
                       color: Colors.redAccent,
                       fontWeight: FontWeight.bold,

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_course/basic_widgets/bottom_navigation_bar_example.dart';
 import 'package:flutter_course/basic_widgets/grid_view_example.dart';
-import 'package:flutter_course/basic_widgets/list_view_example.dart';
-import 'package:flutter_course/basic_widgets/toast_example.dart';
+import 'package:flutter_course/bmicalculator/bmi_calculator.dart';
+
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
 
@@ -17,9 +17,9 @@ class _HomePageState extends State<HomePage> {
       backgroundColor: Colors.white,
       appBar: AppBar(
         centerTitle: true,
-        title: Text("Home Page"),
+        title: const Text("Home Page"),
       ),
-      body:  Center(
+      body: Center(
         child: SingleChildScrollView(
           child: Padding(
             padding: const EdgeInsets.all(20.0),
@@ -28,22 +28,25 @@ class _HomePageState extends State<HomePage> {
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 GestureDetector(
-                  onTap: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => BottomNavigatioNBarExample()));
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) =>
+                                BottomNavigatioNBarExample()));
                   },
                   child: Container(
                     padding: const EdgeInsets.all(35),
                     margin: const EdgeInsets.all(20),
                     decoration: BoxDecoration(
-                        border: Border.all(color: Colors.black,width: 4),
+                        border: Border.all(color: Colors.black, width: 4),
                         borderRadius: BorderRadius.circular(50),
                         boxShadow: const [
                           BoxShadow(
                             color: Colors.green,
                             offset: Offset(6.0, 6.0),
                           )
-                        ]
-                    ),
+                        ]),
                     child: const Text(
                       "Basic Widgets Apps",
                       style: TextStyle(
@@ -54,22 +57,24 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
                 GestureDetector(
-                  onTap: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => GridViewExample()));
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => BMICalculator()));
                   },
                   child: Container(
                     padding: const EdgeInsets.all(35),
                     margin: const EdgeInsets.all(20),
                     decoration: BoxDecoration(
-                        border: Border.all(color: Colors.black,width: 4),
+                        border: Border.all(color: Colors.black, width: 4),
                         borderRadius: BorderRadius.circular(50),
                         boxShadow: const [
                           BoxShadow(
                             color: Colors.green,
                             offset: Offset(6.0, 6.0),
                           )
-                        ]
-                    ),
+                        ]),
                     child: const Text(
                       "BMI Calculator",
                       style: TextStyle(
@@ -80,23 +85,24 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
                 GestureDetector(
-                  onTap: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => GridViewExample()));
-
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => GridViewExample()));
                   },
                   child: Container(
                     padding: const EdgeInsets.all(35),
                     margin: const EdgeInsets.all(20),
                     decoration: BoxDecoration(
-                        border: Border.all(color: Colors.black,width: 4),
+                        border: Border.all(color: Colors.black, width: 4),
                         borderRadius: BorderRadius.circular(50),
                         boxShadow: const [
                           BoxShadow(
                             color: Colors.green,
                             offset: Offset(6.0, 6.0),
                           )
-                        ]
-                    ),
+                        ]),
                     child: const Text(
                       "Todolist Application",
                       style: TextStyle(
@@ -107,23 +113,24 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
                 GestureDetector(
-                  onTap: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => GridViewExample()));
-
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => GridViewExample()));
                   },
                   child: Container(
                     padding: const EdgeInsets.all(35),
                     margin: const EdgeInsets.all(20),
                     decoration: BoxDecoration(
-                        border: Border.all(color: Colors.black,width: 4),
+                        border: Border.all(color: Colors.black, width: 4),
                         borderRadius: BorderRadius.circular(50),
                         boxShadow: const [
                           BoxShadow(
                             color: Colors.green,
                             offset: Offset(6.0, 6.0),
                           )
-                        ]
-                    ),
+                        ]),
                     child: const Text(
                       "WorldTimer Application",
                       style: TextStyle(
@@ -134,22 +141,24 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
                 GestureDetector(
-                  onTap: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => GridViewExample()));
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => GridViewExample()));
                   },
                   child: Container(
                     padding: const EdgeInsets.all(35),
                     margin: const EdgeInsets.all(20),
                     decoration: BoxDecoration(
-                        border: Border.all(color: Colors.black,width: 4),
+                        border: Border.all(color: Colors.black, width: 4),
                         borderRadius: BorderRadius.circular(50),
                         boxShadow: const [
                           BoxShadow(
                             color: Colors.green,
                             offset: Offset(6.0, 6.0),
                           )
-                        ]
-                    ),
+                        ]),
                     child: const Text(
                       "Firebase Chat Application",
                       style: TextStyle(
@@ -168,19 +177,23 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           children: const <Widget>[
             UserAccountsDrawerHeader(
-              accountName: Text("Eslam Medhat",
+              accountName: Text(
+                "Eslam Medhat",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 20,
                   color: Colors.black,
-                ),),
+                ),
+              ),
               accountEmail: Text("ieslammedhat@gmail.com"),
               currentAccountPicture: CircleAvatar(
-                backgroundImage: NetworkImage("https://yt3.ggpht.com/gco-xrRwhEl0-Z0ihTXHy9vAV1VXYjEJ5LZjufT9UBmN88adElZi9lebEzBbZVHdOSVRt6ok=s900-c-k-c0x00ffffff-no-rj"),
+                backgroundImage: NetworkImage(
+                    "https://yt3.ggpht.com/gco-xrRwhEl0-Z0ihTXHy9vAV1VXYjEJ5LZjufT9UBmN88adElZi9lebEzBbZVHdOSVRt6ok=s900-c-k-c0x00ffffff-no-rj"),
               ),
               otherAccountsPictures: [
                 CircleAvatar(
-                  backgroundImage: NetworkImage("https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-dsc/events/uzOUInrE_400x400.jpg"),
+                  backgroundImage: NetworkImage(
+                      "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-dsc/events/uzOUInrE_400x400.jpg"),
                 )
               ],
             ),
@@ -200,7 +213,9 @@ class _HomePageState extends State<HomePage> {
               title: Text("Recent"),
               leading: Icon(Icons.watch_later_outlined),
             ),
-            Divider(thickness: 1,),
+            Divider(
+              thickness: 1,
+            ),
             ListTile(
               title: Text("Offline"),
               leading: Icon(Icons.download_for_offline),
@@ -213,7 +228,9 @@ class _HomePageState extends State<HomePage> {
               title: Text("Backups"),
               leading: Icon(Icons.backup),
             ),
-            Divider(thickness: 1,),
+            Divider(
+              thickness: 1,
+            ),
             ListTile(
               title: Text("Help"),
               leading: Icon(Icons.help),
@@ -226,7 +243,7 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: (){},
+        onPressed: () {},
         child: Icon(Icons.add),
       ),
     );

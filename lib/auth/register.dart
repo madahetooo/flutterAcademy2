@@ -31,7 +31,7 @@ class _RegisterState extends State<Register> {
                     )
                 ),
               ),
-              SizedBox(height: 20.0,),
+              const SizedBox(height: 20.0,),
               TextFormField(
                 keyboardType: TextInputType.emailAddress,
                 decoration: InputDecoration(
@@ -42,7 +42,7 @@ class _RegisterState extends State<Register> {
                     )
                 ),
               ),
-              SizedBox(height: 20.0,),
+              const SizedBox(height: 20.0,),
               TextFormField(
                 keyboardType: TextInputType.emailAddress,
                 decoration: InputDecoration(
@@ -53,7 +53,7 @@ class _RegisterState extends State<Register> {
                     )
                 ),
               ),
-              SizedBox(height: 20.0,),
+              const  SizedBox(height: 20.0,),
               TextFormField(
                 keyboardType: TextInputType.emailAddress,
                 decoration: InputDecoration(
@@ -64,7 +64,7 @@ class _RegisterState extends State<Register> {
                     )
                 ),
               ),
-              SizedBox(height: 40.0,),
+              const SizedBox(height: 40.0,),
               Material(
                 elevation: 5,
                 color: Colors.red,
@@ -78,17 +78,17 @@ class _RegisterState extends State<Register> {
                 ),
 
               ),
-              SizedBox(height: 20,),
+              const  SizedBox(height: 20,),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text("Already Have an account !?"),
+                  const Text("Already Have an account !?"),
                   GestureDetector(
                     onTap: (){
                       Navigator.push(context, MaterialPageRoute(builder: (context) => Login()));
 
                     },
-                    child: Text("  Login",
+                    child: const Text("  Login",
                       style: TextStyle(
                           color: Colors.redAccent,
                           fontWeight: FontWeight.bold,
