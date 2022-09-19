@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_course/basic_widgets/bottom_navigation_bar_example.dart';
 import 'package:flutter_course/basic_widgets/grid_view_example.dart';
 import 'package:flutter_course/bmicalculator/bmi_calculator.dart';
+import 'package:flutter_course/todolistapp/ui/todo_list.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -90,7 +91,7 @@ class _HomePageState extends State<HomePage> {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => GridViewExample()));
+                              builder: (context) => TodoListApp()));
                     },
                     child: Container(
                       padding: const EdgeInsets.all(35),
