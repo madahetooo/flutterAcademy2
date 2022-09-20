@@ -3,6 +3,7 @@ import 'package:flutter_course/basic_widgets/bottom_navigation_bar_example.dart'
 import 'package:flutter_course/basic_widgets/grid_view_example.dart';
 import 'package:flutter_course/bmicalculator/bmi_calculator.dart';
 import 'package:flutter_course/todolistapp/ui/todo_list.dart';
+import 'package:flutter_course/world_time_api/ui/loading_time.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -116,10 +117,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                   GestureDetector(
                     onTap: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => GridViewExample()));
+                  Navigator.of(context,rootNavigator: true).pushNamed("/loading_time");
                     },
                     child: Container(
                       padding: const EdgeInsets.all(35),
