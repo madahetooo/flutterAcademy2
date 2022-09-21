@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_course/chat_app/chats_list_screen/ui/chats_list_screen.dart';
 import 'package:flutter_course/ui/welcome_screen.dart';
 import 'package:flutter_course/world_time_api/ui/loading_time.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';

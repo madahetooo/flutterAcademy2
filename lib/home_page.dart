@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_course/basic_widgets/bottom_navigation_bar_example.dart';
 import 'package:flutter_course/basic_widgets/grid_view_example.dart';
 import 'package:flutter_course/bmicalculator/bmi_calculator.dart';
+import 'package:flutter_course/chat_app/chats_list_screen/ui/chats_list_screen.dart';
 import 'package:flutter_course/todolistapp/ui/todo_list.dart';
 import 'package:flutter_course/world_time_api/ui/loading_time.dart';
 
@@ -145,7 +146,7 @@ class _HomePageState extends State<HomePage> {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => GridViewExample()));
+                              builder: (context) => ChatsListScreen()));
                     },
                     child: Container(
                       padding: const EdgeInsets.all(35),
