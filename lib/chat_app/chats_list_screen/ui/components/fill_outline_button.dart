@@ -6,7 +6,6 @@ class FillOutlineButton extends StatelessWidget {
       : super(key: key);
   final bool isFilled;
   final String text;
-
   final VoidCallback press;
 
   @override
