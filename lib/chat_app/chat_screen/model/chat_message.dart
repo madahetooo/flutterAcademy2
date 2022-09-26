@@ -36,18 +36,6 @@ List<ChatMessage> dummyChatMessages = [
     isSender: true,
   ),
   ChatMessage(
-    text: "",
-    messageType: ChatMessageType.audio,
-    messageStatus: MessageStatus.viewed,
-    isSender: false,
-  ),
-  ChatMessage(
-    text: "",
-    messageType: ChatMessageType.video,
-    messageStatus: MessageStatus.viewed,
-    isSender: true,
-  ),
-  ChatMessage(
     text: "Hi Kareem",
     messageType: ChatMessageType.text,
     messageStatus: MessageStatus.viewed,

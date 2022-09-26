@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_course/chat_app/chat_screen/model/chat_message.dart';
+import 'package:flutter_course/chat_app/chat_screen/ui/components/chat_input_field.dart';
 import 'package:flutter_course/chat_app/chat_screen/ui/components/message.dart';
 
 class MessageBody extends StatefulWidget {
@@ -15,13 +16,18 @@ class _MessageBodyState extends State<MessageBody> {
     return Column(
       children: [
         Expanded(
-            child: Padding(
-          padding: EdgeInsets.all(20.0),
-          child: ListView.builder(
+          child: Padding(
+            padding: EdgeInsets.all(20.0),
+            child: ListView.builder(
               itemCount: dummyChatMessages.length,
-              itemBuilder: (context, index) =>
-                  Message(message: dummyChatMessages[index], index: index)),
-        ))
+              itemBuilder: (context, index) => Message(
+                message: dummyChatMessages[index],
+                index: index,
+              ),
+            ),
+          ),
+        ),
+        ChatInputField(),
       ],
     );
   }

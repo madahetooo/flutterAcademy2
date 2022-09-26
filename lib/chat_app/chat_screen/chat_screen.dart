@@ -23,7 +23,7 @@ class _ChatScreenState extends State<ChatScreen> {
   AppBar builAppBar(BuildContext context) {
     return AppBar(
       title: Text(
-        "Kareem Ahmed",
+        "FlutterAcademyChatGroup",
         style: TextStyle(fontSize: 16),
       ),
       actions: [
