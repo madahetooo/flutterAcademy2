@@ -3,6 +3,7 @@ import 'package:flutter_course/basic_widgets/bottom_navigation_bar_example.dart'
 import 'package:flutter_course/basic_widgets/grid_view_example.dart';
 import 'package:flutter_course/bmicalculator/bmi_calculator.dart';
 import 'package:flutter_course/chat_app/chats_list_screen/ui/chats_list_screen.dart';
+import 'package:flutter_course/reverse_string_app/reverse_string_app.dart';
 import 'package:flutter_course/todolistapp/ui/todo_list.dart';
 import 'package:flutter_course/world_time_api/ui/loading_time.dart';
 
@@ -169,6 +170,35 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ),
                   ),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => ReverseStringApp()));
+                    },
+                    child: Container(
+                      padding: const EdgeInsets.all(35),
+                      margin: const EdgeInsets.all(20),
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black, width: 4),
+                          borderRadius: BorderRadius.circular(50),
+                          boxShadow: const [
+                            BoxShadow(
+                              color: Colors.green,
+                              offset: Offset(6.0, 6.0),
+                            )
+                          ]),
+                      child: const Text(
+                        "Reverse String Application",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20,
+                        ),
+                      ),
+                    ),
+                  ),
+
                 ],
               ),
             ),
